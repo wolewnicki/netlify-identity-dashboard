@@ -14,7 +14,6 @@ body {
   overflow: hidden;
 }
 .login-modal {
-  background-image: radial-gradient(white 60%, rgb(73,255,255));
   border-radius: 30%;
   padding-left: 5%;
   padding-right: 5%;
