@@ -6,3 +6,5 @@ const handler = async (evt, ctx) => {
     body: JSON.stringify({message: "Hello world!"})
   }
 }
+
+handler();
