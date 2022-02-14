@@ -1,5 +1,8 @@
-
-document.addEventListener('validate', (e, ctx) => {
-  console.log(e);
+exports.handler = async (evt, ctx) => {
+  console.log(evt);
   console.log(ctx)
-})
+  return {
+    statusCode: 200,
+    body: JSON.stringify({message: "Hello world!"})
+  }
+}
