@@ -1,0 +1,24 @@
+.fancy-object {
+  border-radius: 39% 0% 17% 50%;
+  background-image: linear-gradient(rgb(62, 201, 219), transparent);
+  transform: rotateZ(-38deg) translateY(-10%) translateX(60%);
+  overflow: hidden;
+}
+.fancy-object-left {
+  transform: rotateZ(-47deg) translateY(-20%) translateX(15%);
+  border-radius: 9% 47% 30% 18%;
+  background-image: linear-gradient(rgb(48, 171, 187), transparent);
+}
+body {
+  background-image: linear-gradient(147deg, rgb(73, 255, 255),rgb(49, 225, 238));
+  overflow: hidden;
+}
+.login-modal {
+  border-radius: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.identity * {
+  list-style: none;
+  padding: 0;
+}
