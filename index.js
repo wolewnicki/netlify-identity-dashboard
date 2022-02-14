@@ -4,10 +4,9 @@ const redirect = () => {
   }
 }
 
-console.log(netlifyIdentity.currentUser());
+console.log(netlifyIdentity)
+
 netlifyIdentity.on('init', (e,c) => {
-  console.log(e)
-  console.log(c)
   redirect()
 });
 
