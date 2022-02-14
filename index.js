@@ -4,6 +4,7 @@ const redirect = () => {
   }
 }
 
+netlifyIdentity.currentUser();
 netlifyIdentity.on('login', () => redirect);
 
 if (window.location.href !== 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() === null) {
