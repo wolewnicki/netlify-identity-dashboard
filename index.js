@@ -1,4 +1,4 @@
-exports.handler = async (evt, ctx) => {
+const handler = async (evt, ctx) => {
   console.log(evt);
   console.log(ctx)
   return {
