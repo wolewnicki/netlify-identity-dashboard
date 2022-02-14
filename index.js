@@ -1,9 +1,3 @@
-netlifyIdentity.on('init', user => {
-  console.log(user)
-})
-
-if (netlifyIdentity.currentUser() === null) {
-  window.location.replace('https://admiring-poitras-f07eb5.netlify.app/')
+if (netlifyIdentity.currentUser()) {
+  window.location.replace('https://admiring-poitras-f07eb5.netlify.app/dashboard.html')
 }
-
-console.log(netlifyIdentity.currentUser());
