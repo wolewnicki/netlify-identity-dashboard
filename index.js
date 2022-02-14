@@ -4,4 +4,4 @@ const redirect = () => {
   }
 }
 
-netlifyIdentity.on('init', redirect);
+netlifyIdentity.on('login', redirect);
