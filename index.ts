@@ -1,7 +1,7 @@
 import * as netlifyIdentity from 'netlify-identity-widget'
 
 
-netlifyIdentity.init();
+netlifyIdentity.init({container: '.netlify-container'});
 
 const redirect = (): void => {
   if(window.location.href === 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() !== null) {

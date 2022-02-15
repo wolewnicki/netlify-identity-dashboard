@@ -20,7 +20,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var netlifyIdentity = __importStar(require("netlify-identity-widget"));
-netlifyIdentity.init();
+netlifyIdentity.init({ container: '.netlify-container' });
 var redirect = function () {
     if (window.location.href === 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() !== null) {
         window.location.replace('https://admiring-poitras-f07eb5.netlify.app/dashboard.html');
