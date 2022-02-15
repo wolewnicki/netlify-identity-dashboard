@@ -1,23 +1,27 @@
+import * as netlifyIdentity from 'netlify-identity-widget'
+
+
 netlifyIdentity.init();
 
-const redirect = () => {
+const redirect = (): void => {
   if(window.location.href === 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() !== null) {
     window.location.replace('https://admiring-poitras-f07eb5.netlify.app/dashboard.html')
   }
 }
 
-const logout = () => {
+const logout = (): void => {
     if (window.location.href !== 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() === null) {
     window.location.replace('https://admiring-poitras-f07eb5.netlify.app/');
   }
 }
 
-netlifyIdentity.on('login', (e,c) => {
+netlifyIdentity.on('login', (u) => {
   redirect()
 });
+
 
 if (window.location.href !== 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() === null) {
   window.location.replace('https://admiring-poitras-f07eb5.netlify.app/');
 }
 
-netlifyIdentity.on('logout', logout)
+netlifyIdentity.on('logout', logout);
