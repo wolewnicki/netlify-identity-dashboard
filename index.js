@@ -19,19 +19,19 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const netlifyIdentity = __importStar(require("netlify-identity-widget"));
+var netlifyIdentity = __importStar(require("netlify-identity-widget"));
 netlifyIdentity.init();
-const redirect = () => {
+var redirect = function () {
     if (window.location.href === 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() !== null) {
         window.location.replace('https://admiring-poitras-f07eb5.netlify.app/dashboard.html');
     }
 };
-const logout = () => {
+var logout = function () {
     if (window.location.href !== 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() === null) {
         window.location.replace('https://admiring-poitras-f07eb5.netlify.app/');
     }
 };
-netlifyIdentity.on('login', (u) => {
+netlifyIdentity.on('login', function (u) {
     redirect();
 });
 if (window.location.href !== 'https://admiring-poitras-f07eb5.netlify.app/' && netlifyIdentity.currentUser() === null) {
