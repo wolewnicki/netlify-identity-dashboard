@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+.body {
+  --main-color: #0ec4cb;
+  --light-blueish: #12d1d8;
+  --hover-blue: #27cad0;
+  --bg-color: #f9f9f9;
+}
+.bg-nav {
+  background-image: linear-gradient(
+    127deg,
+    var(--light-blueish),
+    var(--main-color)
+  );
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+.bg-nav * {
+  color: white;
+}
+.body {
+  background-color: var(--bg-color);
+}
+.rounded-right-nav {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.ico-container i {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.nav-items div {
+  width: 100%;
+}
+.nav-items div:hover {
+  background-color: var(--hover-blue);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+.nav-items div:hover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  right: 0;
+  border-width: 1rem 0.3rem 1rem 0.3rem;
+  box-shadow: 0 0.25rem 0.25rem inset var(--light-blueish);
+  border-style: solid;
+  border-color: var(--main-color);
+}
+.btn-elipse {
+  border: solid 1px black;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  padding: 0.65rem 1rem 0.65rem 1rem;
+  user-select: none;
+  cursor: pointer;
+  color: #007BFF;
+}
+.btn-elipse:hover {
+  background-color: #007BFF;
+  color: white;
+}
+.bg-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.stats *{
+  color: var(--main-color);
+}
+.flex-auto div{
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-img {
+  background-image: url(./assets/cta-doctor.webp);
+}
+.view-btn {
+  color: white;
+  background-color: var(--main-color);
+  user-select: none;
+  width: 5rem;
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+  transition: all 0.15s ease-in-out 0.05s;
+}
+.view-btn:hover {
+  color: var(--main-color);
+  background-color: white;
+  cursor: pointer;
+}
+.calendar {
+  padding: 0.25rem;
+  border: 2px solid white
+}
+.calendar:hover {
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  cursor: pointer;
+}
