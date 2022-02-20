@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.netlifyIdentity)
     console.log(this.netlifyIdentity.currentUser())
-    // this.netlifyIdentity.init({container: '.netlify-container'})
-    console.log(this.netlifyIdentity.init)
+    this.netlifyIdentity.init();
   }
 }
