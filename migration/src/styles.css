@@ -103,3 +103,7 @@
   border-radius: 1rem;
   cursor: pointer;
 }
+.netlify-container * {
+  list-style: none;
+  padding: 0;
+}
